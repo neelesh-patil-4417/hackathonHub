@@ -16,7 +16,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from hackmanage.views import hackathon_list,hackathon_create,register_hackathon,enrolled_hackathons,list_submissions,create_submission,signup,login
+from rest_framework_simplejwt.views import TokenRefreshView
+
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('hackathons/',hackathon_list),
+    path('createhackathons/',hackathon_create),
+    path('register/',register_hackathon),
+    path('hackathons-enrolled/',enrolled_hackathons),
+    path('listsubmissions/',list_submissions),
+    path('createsubmission/',create_submission),
+    path('signup/', signup, name='signup'),
+    path('login/', login, name='login'),
+    path('token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
 ]
