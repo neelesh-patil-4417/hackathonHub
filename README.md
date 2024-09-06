@@ -17,7 +17,6 @@ Make sure you have the following installed:
 - pip (Python package installer)
 - (Optional) Virtual Environment (recommended)
 
-## Step 1: Clone the Repository
 
 Clone the project repository using Git:
 
