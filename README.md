@@ -26,7 +26,7 @@ git clone https://github.com/yourusername/your-repo-name.git
 cd your-repo-name
 
 
-## **Step 2: Create a Virtual Environment**
+## Step 2: Create a Virtual Environment
 
 # For Windows
 python -m venv venv
@@ -37,26 +37,26 @@ python3 -m venv venv
 source venv/bin/activate
 
 
-## **Step 3: Install Dependencies**
+## Step 3: Install Dependencies
 
 pip install -r requirements.txt
 
 
-## **Step 4: Run Migrations**
+## Step 4: Run Migrations
 
 python manage.py migrate
 
 
-## **Step 5: Create a Superuser (Optional)**
+## Step 5: Create a Superuser (Optional)
 
 python manage.py createsuperuser
 
 
-## **Step 6: Run the Development Server**
+## Step 6: Run the Development Server
 
 python manage.py runserver
 
 
-## **Step 7: Access the Admin Interface (Optional**
+## Step 7: Access the Admin Interface (Optional
 
 If you created a superuser, you can access the Django admin interface at http://127.0.0.1:8000/admin/
